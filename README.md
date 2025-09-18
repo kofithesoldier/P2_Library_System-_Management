@@ -216,7 +216,7 @@ ON s.issued_id = rs.issued_id
 WHERE rs.return_id IS NULL;
 ```
 
-**--END OF PROJECT**
+**--END OF PROJECT--**
 
 ## Reports
 
