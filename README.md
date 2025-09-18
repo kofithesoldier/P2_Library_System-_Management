@@ -3,7 +3,7 @@
 ## Project Overview
 
 **Project Title**: Library Management System  
-**Level**: Intermediate  
+**Level**: Beginner
 **Database**: `library_db`
 
 This project demonstrates the implementation of a Library Management System using SQL. It includes creating and managing tables, performing CRUD operations, and executing advanced SQL queries. The goal is to showcase skills in database design, manipulation, and querying.
@@ -161,14 +161,14 @@ group by m.member_id,m.member_name
 having count(*) >1;
 ```
 
-Task 6. **Retrieve All Books in a Specific Category:classic**:
+**Task 6. Retrieve All Books in a Specific Category:classic**:
 
 ```sql
 SELECT * FROM books
 WHERE category = 'Classic';
 ```
 
-Task 7. **Task 8: Find Total Rental Income by Category**:
+**Task 7. Find Total Rental Income by Category**:
 
 ```sql
 select b.category,
@@ -180,7 +180,7 @@ on b.isbn=s.issued_book_isbn
 group by category;
 ```
 
-Task 8. **List Employees with Their Branch Manager's Name and their branch details**:
+**Task 8. List Employees with Their Branch Manager's Name and their branch details**:
 
 ```sql
 select
@@ -199,13 +199,13 @@ select * from employee;
 select * from branch;
 ```
 
-Task 9. **Select of Books with Rental Price Above a Certain Threshold**:
+**Task 9. Select of Books with Rental Price Above a Certain Threshold**:
 ```sql
 SELECT book_title FROM books
 WHERE rental_price > 7.00;
 ```
 
-Task 11: **Retrieve the List of Books Not Yet Returned**
+**Task 10: Retrieve the List of Books Not Yet Returned**
 ```sql
 SELECT
       Distinct s.issued_book_name
